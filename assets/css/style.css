@@ -1,0 +1,40 @@
+body {
+    background-image: url("../images/bg-throne.jpg");
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    text-align: center;
+  }
+
+  .container {
+      height: auto;
+      width: 100%;
+      background: radial-gradient(cornflowerblue, darkred);
+
+  }
+  
+  h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
+    padding: 5px;
+  }
+  
+  h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 16px;
+    padding: 2.5px;
+  }
+
+  button {
+    font-family: 'Amatic SC', cursive;
+    background-color: lightslategrey;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+    text-decoration: none;
+    border: darkred;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+  }

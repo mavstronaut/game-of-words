@@ -63,6 +63,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 1. [Watch the demo](https://youtu.be/W-IJcC4tYFI).
 
 2. Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
+      1. Theme ideas? pixel, 
 
 3. Use key events to listen for the letters that your players will type.
 
@@ -80,7 +81,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
 
-9. After the user wins/loses the game should automatically choose another word and make the user play it.
+9.  After the user wins/loses the game should automatically choose another word and make the user play it.
 
 ##### Word Guess Game Bonuses
 
