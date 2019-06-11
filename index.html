@@ -12,6 +12,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 <body>
+    <script>
+        
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/audio/GameofThrones.mp3");
+        $("play-button").on("click", function() {
+            audioElement.play();
+        });
+        $("mute-button").on("click", function() {
+            audioElement.pause();
+        });
+    </script>
     
     <div class="container">
 
@@ -44,6 +55,16 @@
 
     </div>
 
+        <div id="flexcont">
+            <div class="ritem">
+                <p class="btn" id ="play-button"><i class="far fa-play-circle"></i></p>
+            </div>
+            <div class="ritem">
+                <p class="btn" id ="mute-button"><i class="far fa-pause-circle"></i></p>
+            </div>
+        </div>
+       
+
     <div id="mainGame" style="display: none">
 
     <p class="question" id="question"></p>
@@ -68,6 +89,8 @@
         </div>
     </div>
     </div>
+
+
 
     <div id="youLose" class="btn" style="display: none">
 
