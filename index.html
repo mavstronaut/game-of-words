@@ -10,19 +10,23 @@
     <script src='./assets/javascript/game.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a4035d3a2.js"></script>
+
+    <script>
+            var audioElement = document.createElement("audio");
+            audioElement.setAttribute("src", "./assets/audio/GameofThrones.mp3");
+            $("play-button").on("click", function() {
+                audioElement.play();
+                console.log('audio on');
+            });
+            $("mute-button").on("click", function() {
+                audioElement.pause();
+                console.log('audio off');
+            });
+    </script>
 </head>
 <body>
-    <script>
-        
-        var audioElement = document.createElement("audio");
-        audioElement.setAttribute("src", "assets/audio/GameofThrones.mp3");
-        $("play-button").on("click", function() {
-            audioElement.play();
-        });
-        $("mute-button").on("click", function() {
-            audioElement.pause();
-        });
-    </script>
+
     
     <div class="container">
 
@@ -57,10 +61,10 @@
 
         <div id="flexcont">
             <div class="ritem">
-                <p class="btn" id ="play-button"><i class="far fa-play-circle"></i></p>
+                <button class="btn play-button" id ="play-button"><i class="far fa-play-circle"></i></p>
             </div>
             <div class="ritem">
-                <p class="btn" id ="mute-button"><i class="far fa-pause-circle"></i></p>
+                <button class="btn mute-button" id ="mute-button"><i class="far fa-pause-circle"></i></p>
             </div>
         </div>
        
