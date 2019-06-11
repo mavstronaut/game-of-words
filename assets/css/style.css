@@ -30,6 +30,11 @@ body {
     margin: 10px;
     color: #ffffff;
   }
+
+  input {
+      height: 70px;
+      border: none;
+  }
   
   h2 {
     font-family: 'Amatic SC', cursive;
@@ -62,6 +67,18 @@ body {
 
 
   button {
+    font-family: 'Amatic SC', cursive;
+    background-color: lightslategrey;
+    border-radius: 25px;
+    text-decoration: none;
+    border: darkred 5px;
+    font-size: 32px;
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+  }
+
+  .btn {
     font-family: 'Amatic SC', cursive;
     background-color: lightslategrey;
     border-radius: 25px;
