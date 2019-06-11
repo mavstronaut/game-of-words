@@ -104,5 +104,5 @@ body {
     justify-content: space-between;
   }
   #ritem {
-
+    flex-shrink: 6;
   }

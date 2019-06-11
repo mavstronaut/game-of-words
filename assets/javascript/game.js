@@ -1,4 +1,13 @@
 
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "assets/");
+$("mute-button").on("click", function() {
+    audioElement.play();
+});
+$("play-button").on("click", function() {
+    audioElement.pause();
+});
+
 var word = "";
 var wordGuess = [];
 var wrongGuess = [];
