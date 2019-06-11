@@ -1,4 +1,5 @@
 
+
 var word = "";
 var wordGuess = [];
 var wrongGuess = [];
@@ -27,9 +28,9 @@ function chooseDif3() {
 
 
 function wordw() {
-    var randomWords = ["Waymar", "Gared", "Will", "Mycah", "Lady", "Wallen", "Stiv", "Vardis", "Wyl", "Heward", "Willis", "Kurleket", "Viserys", "Targaryen", "Mago", "Qotho", "KhalDrogo", "Drogo", "MirriMazDurr", "Robert", "Baratheon", "Varly", "VayonPoole", "SeptaMordane", "JoryCassel", "SyrioForel", "EddardStark", "Stark", "Barra", "Cressen", "Rakharo", "TheSpiceKing", "Irri", ,"PyatPree" "Doreah", "XaroXhoan", "Daxos", "Lommy", "Yoren", "Tickler", "AmoryLorch", "RenlyBaratheon", "AltonLannister", "Lannister", "TorrhenKarstark", "Torrhen", "Tom", "Maege", "Mandon", "Mormont", "Moore", "MathhosSeaworth", "Drennen", "Rennick", "TheHighSepton", "QhorinHalfhand", "RodrikCassel", "Lewin", "Craster", "JeorMormont", "Jeor", "Skinner", "WillemLannister", "Martyn", "Rickard", "Ros", "Kraznys", "Greizhen", "Prendahl", "Mero", "Robb", "GreyWind", "Wendel", "Joffrey", "Polliver", "Lowell", "Karl", "Rast", "Styr", ,"Locke" "Rorge", "Biter", "Kegs", "Mully", "JackBulwer", "Guymon", "TheLordofBones", "MagMar", "Grenn", "Dongo", "Smitty", "Cooper", "Donnel", "Pypar", "Oznak", "Mossador", "Ygritte", "LysaArryn", "Ralf", "Oberyn", "Martell", "Shae", "Tywin", "WhiteRat", "Myranda", "Meryn", "Janos", "Loboda", "Mance", "Gordy", "Summer", "Balon", "LadyCrane", "Shaggydog"]
+    var randomWords = ["Waymar", "Gared", "Will", "Mycah", "Lady", "Wallen", "Stiv", "Vardis", "Wyl", "Heward", "Willis", "Kurleket", "Viserys", "Targaryen", "Mago", "Qotho", "KhalDrogo", "Drogo", "MirriMazDurr", "Robert", "Baratheon", "Varly", "VayonPoole", "SeptaMordane", "JoryCassel", "SyrioForel", "EddardStark", "Stark", "Barra", "Cressen", "Rakharo", "TheSpiceKing", "Irri", "PyatPree", "Doreah", "XaroXhoan", "Daxos", "Lommy", "Yoren", "Tickler", "AmoryLorch", "RenlyBaratheon", "AltonLannister", "Lannister", "TorrhenKarstark", "Torrhen", "Tom", "Maege", "Mandon", "Mormont", "Moore", "MathhosSeaworth", "Drennen", "Rennick", "TheHighSepton", "QhorinHalfhand", "RodrikCassel", "Lewin", "Craster", "JeorMormont", "Jeor", "Skinner", "WillemLannister", "Martyn", "Rickard", "Ros", "Kraznys", "Greizhen", "Prendahl", "Mero", "Robb", "GreyWind", "Wendel", "Joffrey", "Polliver", "Lowell", "Karl", "Rast", "Styr", "Locke", "Rorge", "Biter", "Kegs", "Mully", "JackBulwer", "Guymon", "TheLordofBones", "MagMar", "Grenn", "Dongo", "Smitty", "Cooper", "Donnel", "Pypar", "Oznak", "Mossador", "Ygritte", "LysaArryn", "Ralf", "Oberyn", "Martell", "Shae", "Tywin", "WhiteRat", "Myranda", "Meryn", "Janos", "Loboda", "Mance", "Gordy", "Summer", "Balon", "LadyCrane", "Shaggydog"]
     var raNum = Math.floor(Math.random() * 114);
-    return randomWords[raNum]
+    return randomWords[raNum].toLowerCase();
     }
 
 
@@ -105,8 +106,9 @@ function start() {
 }
 
 function enterGuess() {
-    var lett = document.getElementById("guess").value;
-    document.getElementById("guess").value = "";
+    var entry = "";
+    var lett = document.getElementById("guess").value.toLowerCase();
+    document.getElementById("guess").value = entry;
 
     if (lett.length === 1){
         var rightOnot = isRightOnot(lett);
@@ -117,7 +119,7 @@ function enterGuess() {
 
         else {
             if(!wrongGuess.includes(lett)) {
-                console.log("hi");
+                console.log("that's another sword in my butt");
                 wrongGuess.push(lett);
             }
             guessBomb -= 1;

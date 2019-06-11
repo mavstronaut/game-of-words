@@ -11,30 +11,98 @@ body {
   .container {
       height: auto;
       width: 100%;
-      background: radial-gradient(cornflowerblue, darkred);
-
+      min-width: 400px;
+      max-width: 400px;
+      background: radial-gradient(cornflowerblue, #3557ce80);
+      font: gold;
   }
   
   h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 28px;
-    padding: 5px;
+    font-size: 42px;
+    color: #ffffff;
+    padding: 13px;
+  }
+
+   #maingame {
+    font-family: 'Amatic SC', cursive;
+    font-size: 42px;
+    padding: 13px;
+    margin: 10px;
+    color: #ffffff;
+  }
+
+  input {
+      height: 70px;
+      width: 42px;
+      border: none;
+      text-align: center;
+      font-size: 66px;
+      font-family: 'Amatic SC', cursive;
   }
   
   h2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 16px;
-    padding: 2.5px;
+    font-size: 36px;
+    padding: 7px;
+    color: #ffffff;
   }
+
+  h5 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+    padding: 7px;
+    color: #ffffff;
+  }
+
+  #startButton {
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+    padding: 7px;
+    margin: 10px;
+    color: #ffffff;
+  }
+
+  p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+    padding: 7px;
+    color: #ffffff;
+  }
+
+  .question {
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+    padding: 7px;
+    color: #ffffff;
+  }
+
 
   button {
     font-family: 'Amatic SC', cursive;
     background-color: lightslategrey;
-    padding: 1em 1.5em;
     border-radius: 25px;
     text-decoration: none;
-    border: darkred;
-    font-size: 18px;
-    padding: 5px;
+    border: darkred 5px;
+    font-size: 32px;
+    padding: 10px;
     margin: 5px;
+    color: #ffffff;
+  }
+
+  .btn {
+    font-family: 'Amatic SC', cursive;
+    background-color: lightslategrey;
+    text-decoration: none;
+    font-size: 32px;
+    color: #ffffff;
+  }
+
+  #flexcont {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #ritem {
+    flex-shrink: 6;
   }

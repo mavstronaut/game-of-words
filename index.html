@@ -9,15 +9,19 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/reset.css'>
     <script src='./assets/javascript/game.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a4035d3a2.js"></script>
+
+
 </head>
 <body>
-    
+
     <div class="container">
 
     <div id="chooseDifficulty" style="display: block">
 
-        <h1>Guess a Word</h1>
-        <h5>Choose a difficulty</h5>
+        <h1 class="question">Guess a Word</h1>
+        <h5 class="question">Choose a difficulty</h5>
         <button title="very easy" onclick="chooseDif1()">Short Words Only</button><br>
         <button title="not difficult" onclick="chooseDif2()">Normal Words to Say at Parties</button><br>
         <button title="a challenge" onclick="chooseDif3()">Extended Words Exclusively</button><br>
@@ -43,9 +47,19 @@
 
     </div>
 
+        <div id="flexcont">
+            <div class="ritem">
+                <button class="btn play-button" id ="play-button"><i class="far fa-play-circle"></i></p>
+            </div>
+            <div class="ritem">
+                <button class="btn mute-button" id ="mute-button"><i class="far fa-pause-circle"></i></p>
+            </div>
+        </div>
+       
+
     <div id="mainGame" style="display: none">
 
-    <p id="question"></p>
+    <p class="question" id="question"></p>
 
     <input type="text" id="guess" maxlength="1">
 
@@ -57,13 +71,20 @@
 
     <div id="RRguess" style="display: block">
 
-    <p id="rightGuess"></p>
-    <p id ="wrongGuess"></p>
-    <p id ="guessesLeft"></p>
-
+    <p class="btn" id="rightGuess"></p>
+    <div id="flexcont">
+        <div class="ritem">
+            <p class="btn" id ="wrongGuess"></p>
+        </div>
+        <div class="ritem">
+            <p class="btn" id ="guessesLeft"></p>
+        </div>
+    </div>
     </div>
 
-    <div id="youLose" style="display: none">
+
+
+    <div id="youLose" class="btn" style="display: none">
 
         <h1>Valar Morghulis and This Time, It's You.<br> You Lose.</h1>
 
@@ -75,7 +96,7 @@
 
     </div>
 
-    <div id="youWin" style="display: none">
+    <div id="youWin" class="btn" style="display: none">
 
         <h2>You Won the Throne, but Winter is Coming.</h2>
 
@@ -86,6 +107,22 @@
     </div>
 
     </div>
+
+    <script>
+
+        $(document).ready(function() {
+            var audioElement = document.createElement("audio");
+            audioElement.setAttribute("src", "./assets/audio/GameofThrones.mp3");
+            $("#play-button").on("click", function() {
+                audioElement.play();
+                console.log('audio on');
+            });
+            $("#mute-button").on("click", function() {
+                audioElement.pause();
+                console.log('audio off');
+            });
+        });
+    </script>
 
 </body>
 </html>
