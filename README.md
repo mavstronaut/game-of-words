@@ -1,5 +1,5 @@
 # game-of-words
-
+- Play now at: http://www.roclineage.com/game-of-words/
 
 ### Overview
 Game of Words is a browser game of hangman, themed on only the dead characters from HBO's acclaimed Game of Thrones.
